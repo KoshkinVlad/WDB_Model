@@ -1,0 +1,452 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.top {
+    background: linear-gradient(0deg, #EBF3FB 8.84%, rgba(152, 195, 232, 0) 31.12%);
+    height: 768px;
+}
+
+.container {
+    max-width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin: 0 auto;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 39px;
+}
+
+.top__content {
+    max-width: 504px;
+}
+
+.top__background {
+    background-image: url(img/ilustration_bg.png);
+    background-repeat: no-repeat;
+    background-position: right bottom;
+    height: 90%;
+    background-size: 50%;
+}
+
+.top__heading {
+    font-weight: 300;
+    font-size: 64px;
+    line-height: 74px;
+    color: #1F3F68;
+    margin-top: 115px;
+    margin-bottom: 15px;
+}
+
+.text {
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    opacity: 0.6;
+}
+
+.button {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    letter-spacing: 0.04em;
+    color: #FFFFFF;
+    background: #5A98D0;
+    box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+    border-radius: 10px;
+    padding: 15px 50px;
+    display: inline-block;
+    margin-top: 71px;
+}
+
+.heading {
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 46px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #000000;
+    margin-top: 64px;
+    margin-bottom: 32px;
+}
+
+.heading__mini {
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #1F3F68;
+    margin-bottom: 14px;
+}
+
+.product-box {
+    margin-top: 64px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.product {
+    display: flex;
+    flex-direction: column;
+    width: 359px;
+    background: #FFFFFF;
+    box-shadow: 5px 20px 50px rgba(16, 112, 177, 0.2);
+    border-radius: 10px;
+    padding: 44px 32px;
+}
+
+.product__link {
+    font-size: 14px;
+    line-height: 30px;
+    letter-spacing: 0.05em;
+    color: #5A98D0;
+    margin-top: 30px;
+    display: flex;
+}
+
+.product__image {
+    margin-bottom: 51px;
+    align-self: center;
+    height: 155px;
+    /* иначе средняя картинка будет слишком высокой и нарушит структуру */
+}
+
+.product__arrow {
+    margin-left: 24px;
+}
+
+.text__big {
+    font-size: 16px;
+    line-height: 26px;
+    width: 750px;
+    text-align: center;
+    letter-spacing: 0.05em;
+    color: #222222;
+    margin: 0 auto;
+    margin-bottom: 64px;
+}
+
+.projects {
+    margin-bottom: 112px;
+}
+
+.projects__row {
+    display: flex;
+    justify-content: space-between;
+}
+
+.project__big {
+    background-image: url(img/project1.png);
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 480px;
+    margin-bottom: 32px;
+}
+
+.projects__normal {
+    background-repeat: no-repeat;
+    height: 417px;
+    width: 50%;
+}
+
+.project2,
+.project3 {
+    border-radius: 10px;
+
+}
+
+.project2 {
+    background-image: url(img/project2.jpg);
+    margin-right: 32px;
+}
+
+.project3 {
+    background-image: url(img/project3.jpg);
+}
+
+.projects__big__name {
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 46px;
+    text-align: right;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding-top: 64px;
+    padding-right: 64px;
+}
+
+.projects__normal__name {
+    font-weight: normal;
+    font-size: 28px;
+    line-height: 46px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    padding: 32px;
+}
+
+.footer {
+    background: #316099;
+}
+
+.footer__container {
+    padding-left: 113px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.heading__footer {
+    color: #FFFFFF;
+    padding-top: 91px;
+    text-align: left;
+    width: 314px;
+}
+
+.footer__top {
+    margin-bottom: 96px;
+}
+
+.text__footer {
+    color: #FFFFFF;
+    width: 495px;
+}
+
+.footer__button {
+    border-radius: 0px;
+    margin-top: 165px;
+    margin-right: 114px;
+    height: 56px;
+    /* возможно, так делать неправильно, но иначе у меня кнопка растягивается на всю ширину блока */
+}
+
+.footer__info {
+    display: flex;
+    justify-content: space-around;
+    margin-left: 113px;
+    margin-top: 64px;
+}
+
+.key-value-pair {
+    display: flex;
+}
+
+.footer_info__key,
+.footer_info__value {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+}
+
+.footer_info__key {
+    margin-right: 19px;
+}
+
+.footer_info__value {
+    margin-right: 32px;
+    max-width: 317px;
+}
+
+.footer_info__value:last-child {
+    margin-right: 114px;
+}
+
+.copyright {
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 26px;
+    letter-spacing: 0.05em;
+    color: #FFFFFF;
+    opacity: 0.4;
+    margin-left: 113px;
+    margin-top: 64px;
+    padding-bottom: 64px;
+}
+
+@media (max-width: 1023px) {
+    .product-box {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .product {
+        margin-bottom: 32px;
+    }
+
+    .footer__info {
+        flex-direction: column;
+    }
+
+    .key-value-pair {
+        margin-bottom: 25px;
+    }
+
+    .footer_info__value {
+        max-width: 100%;
+    }
+
+    .footer_info__key {
+        margin-right: 47px;
+    }
+}
+
+@media (max-width: 377px) {
+    .header {
+        padding-top: 24px;
+    }
+
+    .top__background {
+        background-image: none;
+        text-align: center;
+    }
+
+    .top__heading {
+        font-size: 32px;
+        line-height: 37px;
+        margin-top: 36px;
+        margin-bottom: 12px;
+    }
+
+    .heading {
+        font-size: 24px;
+        line-height: 28px;
+    }
+
+    .top {
+        height: auto;
+    }
+
+    .container {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .button {
+        margin-top: 32px;
+        font-size: 12px;
+        margin-bottom: 41px;
+        text-align: center;
+        letter-spacing: 0.04em;
+        color: #FFFFFF;
+        background: #5A98D0;
+        box-shadow: 5px 10px 20px rgba(53, 110, 173, 0.2);
+        border-radius: 10px;
+        padding: 1px 10px;
+        display: inline-block;
+    }
+
+    .text__big {
+        width: auto;
+    }
+
+    .projects {
+        margin-bottom: 48px;
+    }
+
+    .projects__row {
+        flex-direction: column;
+
+    }
+
+    .project__big {
+        height: 145px;
+        background-repeat: round;
+        margin-bottom: 16px;
+    }
+
+    .projects__normal {
+        height: 255px;
+        width: 100%;
+        background-repeat: round;
+        margin-bottom: 16px;
+    }
+
+    .projects__big__name {
+        font-size: 16px;
+        line-height: 19px;
+        padding-right: 16px;
+        padding-top: 16px;
+    }
+
+    .projects__normal__name {
+        font-size: 16px;
+        line-height: 19px;
+        padding-top: 26px;
+        padding-left: 16px;
+    }
+
+    .footer {
+        text-align: center;
+    }
+
+    .footer__top {
+        margin-bottom: 0;
+    }
+
+    .heading__footer {
+        padding-top: 0;
+        margin-top: 18px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .text__footer {
+        width: auto;
+    }
+
+    .footer__container {
+        flex-direction: column;
+    }
+
+    .footer__info {
+        margin: 0;
+        margin-top: 32px;
+        text-align: left;
+    }
+
+    .footer_info__key {
+        margin-right: 23px;
+    }
+
+    .footer_info__value:last-child {
+        margin-right: 0;
+    }
+
+    .key-value-pair {
+        margin-bottom: 17px;
+    }
+
+    .copyright {
+        margin-top: 37px;
+        margin-left: 15px;
+    }
+    .footer__button {
+        margin: 0 auto;
+        margin-top: 40px;
+        margin-bottom: 41px;
+        font-size: 16px;
+        line-height: 26px;
+        border-radius: 0;
+        height: 32px;
+        width: 108px;
+        padding-top: 4px;
+    }
+}
